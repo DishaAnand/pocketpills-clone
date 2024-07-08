@@ -6,14 +6,14 @@ import styles from '../Navbar/Navbar.module.scss';
 
 // eslint-disable-next-line react-refresh/only-export-components
 const EnhancedNavbar = (props) => {
-  const [activeDropdown, setActiveDropdown] = useState('forEmployers');
+  const [activeDropdown, setActiveDropdown] = useState(null);
 
   const handleMouseEnter = (menu) => {
     setActiveDropdown(menu);
   };
 
   const handleMouseLeave = () => {
-    setActiveDropdown('forEmployers');
+    setActiveDropdown(null);
   };
 
   return (
